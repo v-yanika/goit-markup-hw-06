@@ -64,29 +64,30 @@
 
                     <form class="modal-form">
 
+
                         <label class="form-group">
                             <span class="form-label">Ім'я</span>
                             <input class="form-modal-input" type="text" name="username" id="user-name"> <svg width="18"
                                 height="18" class="form-icon">
                                 <use href="./images/icons.svg#icon-person"> </use>
-                            </svg></input>
+                            </svg>
                         </label>
 
                         <label class="form-group">
                             <span class="form-label"> Телефон</span>
-                            <input class="form-modal-input" type="phone" name="userphone" id="user-phone"> <svg
+                            <input class="form-modal-input" type="number" name="userphone" id="user-phone"> <svg
                                 width="18" height="18" class="form-icon">
                                 <use href="./images/icons.svg#icon-phone-form"> </use>
-                            </svg></input>
+                            </svg>
                         </label>
 
                         <label class="form-group">
                             <span class="form-label"> Пошта</span>
-                            <input class="form-modal-input" type="mail" name="usermail" id="user-mail"> <svg width="18"
+                            <input class="form-modal-input" type="email" name="usermail" id="user-mail"> <svg width="18"
                                 height="18" class="form-icon">
                                 <use href="./images/icons.svg#icon-mail-form"> </use>
                             </svg>
-                            </input>
+
                         </label>
 
                         <label class="form-group">
@@ -98,7 +99,7 @@
 
                         <label class="form-group-policy">
                             <input class="form-modal-policy is-hidden" type="checkbox">
-                            </input><span class="form-icon-check">
+                            <span class="form-icon-check">
                                 <svg width="16" height="16" class="icon-check">
                                     <use href="./images/icons.svg#icon-check"> </use>
                                 </svg></span>
@@ -348,8 +349,8 @@
             <div class="socialmedia-footer nopadding">
 
                 <strong class="socialmedia-title">Підпишіться на розсилку </strong>
-                <form class="footer-form"><label><input class="footer-mail-form" type="mail" name="usermail"
-                            id="user-mail" placeholder="E-mail"></input></label>
+                <form class="footer-form"><input class="footer-mail-form" type="email" name="usermail" id="user-email"
+                        placeholder="E-mail">
 
                     <button type="submit" class="footer-follow-btn">Підписатися
                         <svg width="24" height="24" class="icon-send">
