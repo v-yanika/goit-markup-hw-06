@@ -868,12 +868,12 @@ img {
 }
 
 .modal-form .form-group+.form-group {
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 .form-modal-input {
     width: 100%;
-    min-height: 40px;
+    height: 40px;
     border-radius: 4px;
     padding: 10px 10px 10px 35px;
     background-color: transparent;
@@ -892,9 +892,10 @@ img {
 }
 
 .form-comment-input {
+    display: block;
     position: relative;
     width: 100%;
-    min-height: 120px;
+    height: 120px;
     border-radius: 4px;
     outline: 1px solid rgba(33, 33, 33, 0.20);
     outline-offset: -1px;
@@ -972,8 +973,9 @@ img {
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icon-check:focus {
-    outline: var(--accent-color);
+.form-icon-check:focus,
+.form-icon-check:hover {
+    outline-color: var(--accent-color);
 }
 
 .form-modal-policy:checked+.form-icon-check {
@@ -1016,7 +1018,7 @@ img {
 .form-icon {
     position: absolute;
     left: 10px;
-    top: 12px;
+    top: 10px;
     fill: var(--title-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1027,7 +1029,8 @@ img {
 .form-btn {
     width: 200px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 0px 0px;
     color: var(--accent-text-color);
     text-align: center;
     font-size: 16px;
