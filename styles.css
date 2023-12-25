@@ -793,7 +793,7 @@ img {
 
 .modal {
     position: absolute;
-    width: 530px;
+    width: 528px;
     height: 581px;
     left: 50%;
     top: 50%;
@@ -973,9 +973,8 @@ img {
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icon-check:focus,
-.form-icon-check:hover {
-    outline-color: var(--accent-color);
+.form-modal-policy:focus+.form-icon-check {
+    outline: solid var(--accent-color);
 }
 
 .form-modal-policy:checked+.form-icon-check {
@@ -1011,7 +1010,7 @@ img {
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
-    text-decoration-line: underline;
+    text-decoration: underline;
 }
 
 
